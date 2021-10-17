@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PIP</string>
+    <string name="info">Information</string>
+    <string name="info_details">Information Details</string>
+</resources>

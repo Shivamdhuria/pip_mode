@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_loading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/tape"
+        app:lottie_scale="0.2"
+        app:lottie_speed="3" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/animation_loading"
+        app:srcCompat="@android:mipmap/sym_def_app_icon" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter PIP mode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/heading"
+        style="?attr/textAppearanceHeadline5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quo sunt dolorem ab culpa consequatur sit maxime quis."
+        app:layout_constraintTop_toBottomOf="@id/button" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/description"
+        style="?attr/textAppearanceBody2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lorem ipsum dolor sit amet. Et ratione facilis ab dolorum consequatur quo odio corporis aut nemo saepe. Qui tempora voluptatem nam dolores dolor est velit omnis? A galisum architecto a neque aspernatur ut voluptatem quia qui dolorem deserunt ea maiores sunt."
+        app:layout_constraintTop_toBottomOf="@id/heading" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
